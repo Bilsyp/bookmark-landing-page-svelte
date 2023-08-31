@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  section {
+    @apply py-14 px-8 desktop:px-20  desktop:py-28  wide:py-40;
+  }
+  section:first-child {
+    @apply desktop:py-0;
+  }
+}
+@layer components {
+  .list_link_page li {
+    @apply w-[80%] py-[20px] tracking-[0.32rem] transition-all duration-500 cursor-pointer font-medium text-center  border-t-[1px] border-t-Grayish_Blue tablet:border-none tablet:text-[0.89rem] tablet:tracking-[0.12rem] tablet:py-2;
+  }
+  .btn-group {
+    @apply flex  gap-x-4 justify-center tablet:gap-x-5 items-center desktop:justify-start;
+  }
+  .btn {
+    @apply p-3  text-[0.89rem]   shadow-xl rounded-md mt-10 font-medium tablet:text-[1.1rem] wide:text-[1.2rem] desktop:py-4 wide:px-8 cursor-pointer;
+  }
+  .Hero_Content .description {
+    @apply text-center desktop:text-left py-16 wide:my-24;
+  }
+  .Hero_Content .description h1 {
+    @apply font-semibold py-3  text-2xl text-Very_Dark_Blue tablet:text-3xl desktop:text-4xl wide:text-5xl;
+  }
+  .description article {
+    @apply max-w-md mx-auto;
+  }
+  .description p {
+    @apply text-[0.89rem]  tablet:text-[1.1rem] desktop:text-[1.2rem] wide:text-[1.4rem] text-Grayish_Blue wide:py-2;
+  }
+  .description h2 {
+    @apply font-semibold py-3  text-xl text-Very_Dark_Blue tablet:text-2xl desktop:text-3xl wide:text-4xl;
+  }
+  .description h3 {
+    @apply font-medium py-3  text-sm text-Very_Dark_Blue tablet:text-[1.3rem] desktop:text-[1.4rem] wide:text-[1.6rem];
+  }
+
+  .image_wrapper {
+    @apply desktop:flex desktop:justify-end wide:block;
+  }
+  .image_wrapper img {
+    @apply tablet:w-[60%] tablet:mx-auto desktop:w-[80%]  wide:w-full;
+  }
+  .Features_Content .description {
+    @apply text-center;
+  }
+  .Features_Content .description article {
+    @apply wide:max-w-2xl;
+  }
+  .Features_Content .description p {
+    @apply desktop:text-[1.3rem];
+  }
+
+  .Item_Of_Feature {
+    @apply desktop:flex desktop:justify-between    desktop:items-center wide:gap-x-20;
+  }
+  .Item_Of_Feature .image_wrapper {
+    @apply desktop:flex desktop:justify-start desktop:items-center;
+  }
+  .Item_Of_Feature .image_wrapper img {
+    @apply desktop:mx-0 wide:w-full;
+  }
+  .Item_Of_Feature .description {
+    @apply max-w-xl tablet:mx-auto mt-20 text-center wide:text-left;
+  }
+  .Feautures_Items ul {
+    @apply tablet:flex tablet:justify-center tablet:items-center;
+  }
+
+  .Feautures_Items ul li {
+    @apply border-t-2 text-center wide:text-left  tablet:border-t-0 tablet:border-b-2;
+  }
+  .Feautures_Items ul li:last-child {
+    @apply border-b-2;
+  }
+  .Feautures_Items ul button {
+    @apply mx-5  outline-none;
+  }
+
+  .Donwload_Extension .description {
+    @apply text-center;
+  }
+  .Donwload_Extension article {
+    @apply wide:max-w-xl;
+  }
+  .Item_Of_Extension {
+    @apply flex flex-col  desktop:flex-row justify-end items-center tablet:flex-row   py-5 gap-10;
+  }
+  .Card {
+    @apply bg-white shadow-xl text-center  py-5  rounded-md w-[100%]  wide:w-[25%] mx-auto;
+  }
+
+  .Card img {
+    @apply mx-auto;
+  }
+
+  .Card .description {
+    @apply py-1 my-3;
+  }
+  .Card .description p {
+    @apply text-[0.89rem] py-0 my-3;
+  }
+
+  .QandA .description {
+    @apply text-center;
+  }
+  .QandA article {
+    @apply wide:max-w-xl;
+  }
+  .Form .description * {
+    @apply text-gray-50;
+  }
+  .Form .description p {
+    @apply uppercase font-light tracking-widest text-[0.95rem];
+  }
+  .Form .description h2 {
+    @apply font-normal;
+  }
+}
+:root {
+  --Soft_Blue: hsl(231, 69%, 60%);
+  --Soft_Red: #fa5757;
+
+  --Grayish_Blue: #9194a1;
+  --Very_Dark_Blue: hsl(229, 31%, 21%);
+}
+
+body {
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+}
+
+.hiddens {
+  transform: translateX(-1000%);
+  opacity: 0;
+  transition: all 1s;
+}
+.show {
+  transform: translateX(0);
+  opacity: 1;
+}
