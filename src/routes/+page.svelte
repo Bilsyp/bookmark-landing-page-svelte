@@ -2,7 +2,7 @@
   import Download from "../components/Download.svelte";
   import Features from "../components/Features.svelte";
   import Hero from "../components/Hero.svelte";
-  import QAndA from "../components/QAndA.svelte"; 
+  import Question from "../components/Question.svelte";
   import Form from "../components/Form.svelte";
 </script>
 
@@ -10,6 +10,6 @@
   <Hero />
   <Features />
   <Download />
-  <QAndA />
+  <Question />
   <Form />
 </main>
